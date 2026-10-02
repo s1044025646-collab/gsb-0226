@@ -1,0 +1,23 @@
+{
+  "name": "booklet-imposition",
+  "version": "1.0.0",
+  "description": "本地小册子双面拼版与页序核验后端（左侧装订 / 每面两页 / 对折成册）",
+  "type": "module",
+  "bin": {
+    "booklet": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.ts",
+    "start": "node dist/cli/index.js serve",
+    "demo": "node dist/cli/index.js demo"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.7.0"
+  }
+}
+
