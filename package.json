@@ -1,0 +1,24 @@
+{
+  "name": "booklet-imposer",
+  "version": "1.0.0",
+  "description": "本地小册子双面拼版与页序核验服务（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "booklet": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/",
+    "start": "node dist/server/index.js",
+    "dev": "node --experimental-strip-types src/server/index.ts",
+    "demo": "node --experimental-strip-types scripts/demo.ts",
+    "cli": "node --experimental-strip-types src/cli/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
